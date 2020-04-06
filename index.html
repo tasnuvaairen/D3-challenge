@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <!--<link rel="stylesheet" href="static/css/style.css">-->
+  <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+
+  <h1>
+    Belly Button Biodiversity Dashboard
+  </h1>
+  
+  <h4>
+    Use the interactive chart below to explore the dataset
+  </h4>
+    
+  <div>
+    <span>Select Sample</span>
+    <select id="filter-select" onchange="filter_select_onchange(this)">
+      <!--<option value="0">0</option>-->
+    </select>
+  </div>
+                
+  <div id="plotA" style="width:500px; height:500px;">
+    
+  </div>  
+  <div id="plotB" style="width:900px; height:600px;">
+  
+  </div>  
+  <div id="plotC">    
+    <table id="plotC-table" class="table table-striped">
+      <caption>Demographic Info</caption>
+      <thead>
+        <tr>
+          <th class="table-head"></th>
+          <th class="table-head"></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!--<script src="static/js/data.js"></script>-->
+  <script src="static/js/app_d3.js"></script>
+</body>
+
+</html>
